@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple p5.js Sketches</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Load p5.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <!-- <h1>My p5.js Project</h1> -->
+  </header>
+
+  <main>
+    <!-- Sketch 1 (regular interactive sketch) -->
+    <section class="sketch-container" id="sketch1-container">
+      <!-- Canvas inserted by p5.js -->
+    </section>
+
+    <!-- Sketch 2 (background with hover overlay) -->
+    <section class="background-container" id="sketch2-container">
+
+      <div class="painttext">
+        <p>Will you <br class="mobile-only">eat or Paint?</p>
+      </div>
+
+      <div class="hover-content arc-layout">
+        <div class="image-hover">
+          <img src="images/orange_w.PNG" class="default-img">
+          <img src="images/orange_c1.PNG" class="hover-img">
+        </div>
+    
+        <div class="image-hover">
+          <img src="images/guava_w.PNG" class="default-img">
+          <img src="images/guava_c1.PNG" class="hover-img">
+        </div>
+    
+        <div class="image-hover">
+          <img src="images/strawberry_w.PNG" class="default-img">
+          <img src="images/strawberry_c1.PNG" class="hover-img">
+        </div>
+    
+        <div class="image-hover">
+          <img src="images/grape_w.PNG" class="default-img">
+          <img src="images/grape_c1.PNG" class="hover-img">
+        </div>
+    
+        <div class="image-hover">
+          <img src="images/apple_w.PNG" class="default-img">
+          <img src="images/apple_c1.PNG" class="hover-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- In your <main> section, after the existing sketch containers -->
+    <section class="sketch-container" id="sketch3-container">
+    <!-- Canvas will be inserted here by p5.js -->
+     <p> Turn sweet moments into lasting art.</p>
+    </section>
+
+    <section class="sketch-container" id="sketch4-container">
+      <p class="text top-right">MAKE ART</p>
+    
+      <div class="text bottom-left">
+        <p class="sweeter-text">SWEETER</p>
+        <a href="purchase.html" class="button-link">
+          <img src="images/click_white.png" alt="Button" class="sweet-button" id="sweetBtn" />
+        </a>
+      </div>
+    </section>
+
+    
+    
+  </main>
+
+  <script src="p5js/sketch1.js"></script>
+  <script src="p5js/sketch2.js"></script>
+  <script src="p5js/sketch3.js"></script>
+  <script src="p5js/sketch4.js"></script>
+  <script src="java/button.js"></script>
+</body>
+</html>
