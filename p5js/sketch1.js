@@ -124,7 +124,7 @@ const sketch = function(p) {
     p.stroke(255);
     p.strokeWeight(5);
     p.fill(255);
-    p.rect(tPosition.x-1, textY, tPosition.width, tPosition.height);
+    p.rect(tPosition.x, textY, tPosition.width, tPosition.height);
   }
   
   function drawPaintStroke() {
